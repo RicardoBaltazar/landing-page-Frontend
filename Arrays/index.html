@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+
+        var array  =[1,2,3,4,5]
+        
+        //EVERY
+
+        //every verifica todos os indices e retorna um boleano de resposta
+        let soNumeros =  array.every( function(elemento, indice, objeto){
+            console.log(elemento)
+            console.log(indice)
+            console.log(objeto)
+
+            return typeof elemento === 'number'
+        })
+            //se todos forem true, o metodo retorna true, do contrario retorna false
+        console.log(soNumeros)
+
+        //SOME
+
+        //O SOME se tiver pelo menos um elemento true, tudo retorna true
+        let apenasUmNumero =  array.every( function(elemento, indice, objeto){
+            console.log(elemento)
+            console.log(indice)
+            console.log(objeto)
+
+            return typeof elemento === 'number'
+        })
+        console.log(apenasUmNumero)
+
+
+        //FILTER
+        //filter retorna outra array, somente contendo os objetos que satisfação uma condição
+
+        let array2 = [1,2,3,4,5, 'a','b','c']
+        //quero retornar apenas ops números,e o filter vai retornar uma nova array só com os números
+        let numeros = array2.filter(function(elemento, indice, array){
+            return typeof elemento ==='number'
+        }) 
+        console.log(numeros)
+
+
+        //forEach
+        //é um looping mas que não necessita da criação de uma variavel
+        array.forEach(function(elemento, indice, array){
+            console.log(elemento, indice)
+        })
+
+        //IndexOf
+        //busca a posição do elemento no array
+        let posicao = array.indexOf(3)
+        console.log('posição ', posicao)
+
+    
+    </script>
+
+</body>
+</html>
