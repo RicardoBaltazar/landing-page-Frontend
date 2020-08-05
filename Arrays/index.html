@@ -60,6 +60,23 @@
         let posicao = array.indexOf(3)
         console.log('posição ', posicao)
 
+
+        //MAP
+        //mpercorre todos os elementos do array e pode modificalos
+        let arrayMap = array.map(function(elemento, indice, array) {
+            return elemento * indice
+        })
+        console.log(arrayMap)
+
+        //CONCAT
+        //serve para juntar os arrays
+        let concat = array.concat(array2, 'ola', 'Mundo', 12356)
+        console.log(concat)
+
+        //JOIN
+        //serve para tranformar uma array em uma estring e pode acrescentar um caractere separador
+        let string = array.join(' - ')
+        console.log(string)
     
     </script>
 
