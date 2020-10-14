@@ -59,7 +59,7 @@ body {
     color: #190b46;
 }
 
-.menu ul button {
+.button {
     background-color: var(--primary-color);
     padding: 10px 20px;
     margin-left: 10px;
@@ -71,6 +71,34 @@ body {
     cursor: pointer;
 }
 
-.menu ul button:hover {
+.button:hover {
     background-color: #2e8d54;
+}
+
+main section {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+}
+
+main section div h1 {
+    color: var(--second-color);
+    max-width: 350px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+main section div p {
+    color: grey;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main section div button {
+    margin-top: 25px;
+}
+
+.img {
+    width: 650px;
 }
